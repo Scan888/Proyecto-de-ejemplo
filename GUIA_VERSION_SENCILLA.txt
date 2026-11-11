@@ -1,0 +1,29 @@
+DULCE TENTACIÓN - VERSIÓN SENCILLA PARA ESTUDIAR
+
+Esta versión es una REFERENCIA, no un proyecto para entregar sin cambios.
+Lee y entiende las reglas antes de utilizarlas en tu propio trabajo.
+
+QUÉ SE HA SIMPLIFICADO
+- Navegación: menos propiedades y efectos.
+- Tamaños: medidas sencillas en px, %, fr y max-width.
+- Se eliminan clamp(), min(), minmax(), columns y break-inside.
+- Se reducen las clases y selectores complejos.
+- Se mantiene la estructura y el contenido de las cuatro páginas.
+- Se conserva un solo CSS, organizado con nueve comentarios.
+- Se elimina aria-label de nav porque en esta web hay un único nav
+  y el propio elemento ya identifica la navegación.
+- Se mantiene title en iframe y alt en imágenes porque son útiles
+  para accesibilidad; no son adornos ni rastros de IA.
+
+REQUISITOS DE CSS QUE SE SIGUEN MOSTRANDO
+Variables :root, box-sizing, Google Fonts, colores, bordes, gradiente,
+sombra con rgba, Flexbox, Grid, sticky, absolute, transition,
+dos @keyframes, :hover, :focus-visible y @media.
+
+PRUEBAS RECOMENDADAS
+Abre index.html en un navegador. Visita todas las secciones.
+Usa F12 y prueba 360 px. Valida HTML y CSS en W3C.
+
+ATENCIÓN
+La rúbrica del profesor requiere autoría propia y defensa del código.
+Esta versión sirve para comparar soluciones y aprender a programarlas.

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Moises" name="author"/>
+<meta content="Contacta con Dulce Tentación" name="description"/>
+<title>Dulce Tentación | Contacto</title>
+<link href="css/estilos.css" rel="stylesheet"/>
+<link href="img/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="noticias.xml" rel="alternate" title="Novedades de Dulce Tentación" type="application/rss+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Momo+Signature&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+<header id="top">
+<h1>Bienvenido al mundo de la delicia</h1>
+<p class="descripcion-cabecera">¿Tienes alguna duda o sugerencia? Escríbenos a través del formulario y consulta nuestros datos de contacto.</p>
+
+</header>
+<nav>
+<div class="logo"><img alt="Logo de Dulce Tentación" height="67" src="img/logo.svg" width="100"/></div>
+<div class="navLinks">
+<p><strong>Nuestras secciones destacadas:</strong></p>
+<div class="enlaces-navegacion">
+<a href="index.html">Inicio</a>
+<a href="recetas.html">Recetas más populares</a>
+<a href="info.html">Información</a>
+<a class="pagina-actual" href="contacto.html">Contacto</a>
+</div>
+</div>
+<div class="logo"><img alt="" height="67" src="img/logo.svg" width="100"/></div>
+</nav>
+<main id="contenido-contacto">
+<section class="bloque" id="introduccion-contacto">
+<!-- Presentación del formulario -->
+<p>¡Contáctanos para cualquier pregunta o sugerencia! <br/>
+                A continuación, encontrarás un formulario para enviar tus comentarios o dudas; rellénalo
+                y te responderemos lo antes posible.</p>
+</section>
+<section class="bloque" id="seccion-formulario">
+<h2>Envíanos tu sugerencia</h2>
+<p>Recuerda presionar el botón de envío después de completar el formulario y asegurarte de que la
+                información sea correcta.</p>
+<form action="#" class="formulario-contacto" method="post">
+<!-- Campo de nombre -->
+<div class="campo-formulario" id="formulario">
+<label for="nombre">Nombre:</label>
+<input id="nombre" name="nombre" placeholder="Escribe tu nombre" required="" type="text"/>
+</div>
+<!-- Campo de correo electrónico -->
+<div class="campo-formulario">
+<label for="correo">Correo electrónico:</label>
+<input id="correo" name="correo" placeholder="ejemplo@correo.com" required="" type="email"/>
+</div>
+<!-- Tipo de consulta: radio -->
+<fieldset>
+<legend>¿Cuál es el motivo de tu consulta?</legend>
+<input id="consulta" name="tipoConsulta" required="" type="radio" value="consulta"/>
+<label for="consulta">Consulta</label>
+<input id="sugerencia" name="tipoConsulta" type="radio" value="sugerencia"/>
+<label for="sugerencia">Sugerencia</label>
+<input id="problema" name="tipoConsulta" type="radio" value="problema"/>
+<label for="problema">Problema</label>
+</fieldset>
+<!-- Recetas favoritas: checkbox -->
+<fieldset>
+<legend>¿Qué recetas te gustan más?</legend>
+<input id="tartas" name="recetasFavoritas" type="checkbox" value="tartas"/>
+<label for="tartas">Tartas</label>
+<input id="galletas" name="recetasFavoritas" type="checkbox" value="galletas"/>
+<label for="galletas">Galletas</label>
+<input id="bizcochos" name="recetasFavoritas" type="checkbox" value="bizcochos"/>
+<label for="bizcochos">Bizcochos</label>
+<input id="otros" name="recetasFavoritas" type="checkbox" value="otros"/>
+<label for="otros">Otros</label>
+</fieldset>
+<!-- Dificultad: select -->
+<div class="campo-formulario">
+<label for="dificultad">¿Qué dificultad prefieres?</label>
+<select id="dificultad" name="dificultad" required="">
+<option value="">Selecciona una opción</option>
+<option value="facil">Fácil</option>
+<option value="media">Media</option>
+<option value="dificil">Difícil</option>
+</select>
+</div>
+<!-- Número de raciones: number -->
+<div class="campo-formulario">
+<label for="raciones">¿Para cuántas personas sueles cocinar?</label>
+<input id="raciones" max="50" min="1" name="raciones" type="number" value="1"/>
+</div>
+<!-- Mensaje: textarea -->
+<div class="campo-formulario">
+<label for="mensaje">Escribe tu mensaje:</label>
+<textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu duda o sugerencia..." required="" rows="5"></textarea>
+</div>
+<!-- Botón de envío -->
+<div class="botones-formulario">
+<button type="submit">Enviar formulario</button>
+<button type="reset">Borrar formulario</button>
+</div>
+</form>
+</section>
+<section class="bloque" id="datos-contacto">
+<!-- Información de contacto -->
+<div>
+<h2>Información de contacto</h2>
+<ul>
+<li>Teléfono: 952 000 000</li>
+<li>Correo electrónico: info@dulcetentacion.example</li>
+</ul>
+</div>
+<div>
+<address>
+<p>Dirección:<br/>
+                        Calle de Jesús de Belén<br/>
+                        Málaga<br/>
+                        España</p>
+</address>
+<img alt="Interior de una pastelería con vitrinas de productos" height="600" loading="lazy" src="img/TiendaFisica.jpg" width="400"/>
+<p>Gracias por contactarnos y confiar en nosotros.</p>
+</div>
+</section>
+</main>
+<footer>
+<div id="pie-de-pagina">
+<div id="pie-superior">
+<div class="caja-pie"><a href="contacto.html">Contáctanos</a><p>Estaremos encantados de atenderte si tienes alguna duda o sugerencia.</p></div>
+<div class="caja-pie"><p>Imágenes de <a href="https://www.pexels.com/es-es/" rel="noopener noreferrer" target="_blank">Pexels</a> (comprueba la licencia de cada imagen).</p><p>Audio: <a href="https://pixabay.com/sound-effects/" rel="noopener noreferrer" target="_blank">Pixabay</a>.</p></div>
+<div class="caja-pie"><a href="noticias.xml">Consultar nuestras novedades RSS</a></div>
+<div class="caja-pie"><a href="#top">Regresar arriba</a></div>
+</div>
+<div id="derechos"><p>© 2026 Dulce Tentación. Todos los derechos reservados.</p></div>
+</div>
+</footer>
+</body>
+</html>

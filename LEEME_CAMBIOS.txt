@@ -1,0 +1,23 @@
+DULCE TENTACIÓN - VERSIÓN DE REFERENCIA
+======================================
+ARCHIVOS MODIFICADOS: index.html, recetas.html, info.html, contacto.html, css/estilos.css.
+Las carpetas img/ y audio/ y el archivo noticias.xml se conservan.
+
+QUÉ SE HA HECHO
+- Los cuatro HTML comparten cabecera (mismo h1, logotipos y navegación).
+  Solo cambia el párrafo descriptivo; se retiraron las fotografías antiguas de las cabeceras secundarias.
+- Nav se ha situado justo después de header, con position:sticky, para que siga visible al bajar.
+- Los cuatro HTML comparten footer.
+- Se corrigió el div sin cerrar de index.html y se organizaron estilos de inicio, recetas, info y contacto.
+- Variables de color, Flexbox, Grid, media queries, sombras, gradiente, borde punteado,
+  rgba, hover, focus-visible, position:relative/absolute, transition y dos keyframes.
+- El CSS está comentado por apartados para que puedas entenderlo.
+
+IMPORTANTE PARA LA ENTREGA
+- La rúbrica del profesor prohíbe presentar código generado por IA como autoría propia.
+  Utiliza esta propuesta como referencia de estudio; implementa personalmente lo que entregues y
+  asegúrate de poder explicar cada línea en la defensa.
+- El formulario mantiene action="#": es una demostración HTML y NO envía correos.
+- Comprueba créditos y licencias de CADA imagen; un enlace general a Pexels no siempre basta.
+- Prueba la web a 360px en DevTools, valida HTML/CSS en W3C, realiza capturas y publica en GitHub Pages.
+- Algunos recursos externos (fuentes Google, YouTube) dependen de conexión a Internet.

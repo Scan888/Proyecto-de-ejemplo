@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Dulce Tentación - Novedades</title>
+        <link>https://TU-USUARIO.github.io/TU-REPOSITORIO/</link>
+        <description>Nuevas recetas y recursos publicados en Dulce Tentación.</description>
+        <language>es-es</language>
+        <item>
+            <title>Receta de brownies de chocolate</title>
+            <link>https://TU-USUARIO.github.io/TU-REPOSITORIO/recetas.html#brownie</link>
+            <description>Ingredientes y preparación del brownie de chocolate.</description>
+            <pubDate>Mon, 02 Nov 2026 10:00:00 +0100</pubDate>
+        </item>
+        <item>
+            <title>Receta de tarta de queso</title>
+            <link>https://TU-USUARIO.github.io/TU-REPOSITORIO/recetas.html#tartaQueso</link>
+            <description>Ingredientes y pasos para preparar una tarta de queso.</description>
+            <pubDate>Wed, 04 Nov 2026 18:00:00 +0100</pubDate>
+        </item>
+        <item>
+            <title>Tabla de equivalencias de repostería</title>
+            <link>https://TU-USUARIO.github.io/TU-REPOSITORIO/info.html#equivalencias</link>
+            <description>Equivalencias aproximadas de pesos y medidas para recetas.</description>
+            <pubDate>Sat, 07 Nov 2026 12:00:00 +0100</pubDate>
+        </item>
+    </channel>
+</rss>

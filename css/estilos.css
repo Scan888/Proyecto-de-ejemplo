@@ -1,0 +1,481 @@
+/* DULCE TENTACIÓN - ESTILOS DE LAS CUATRO PÁGINAS */
+
+/* 1. COLORES Y ESTILOS GENERALES */
+:root {
+  --rosa: #9b4d65;
+  --rojo: #bf4342;
+  --crema: #fff8f2;
+  --rosaclaro: #f4d6d6;
+  --marron: #6b4226;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--crema);
+  color: var(--marron);
+  font-family: "Bebas Neue", Arial, sans-serif;
+  font-size: 19px;
+}
+
+h1,
+h2 {
+  font-family: "Momo Signature", cursive;
+  text-align: center;
+}
+
+h1 {
+  color: var(--rosa);
+}
+h2 {
+  color: var(--rojo);
+}
+h3 {
+  color: var(--rosa);
+}
+
+p,
+li {
+  line-height: 1.5;
+}
+a {
+  color: var(--rosa);
+}
+a:hover {
+  color: var(--rojo);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px dashed var(--rosa);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 2. HEADER Y NAVEGACIÓN - TODAS LAS PÁGINAS */
+#top {
+  background: linear-gradient(#f4d6d6, #fff0e4);
+  border: 2px solid var(--marron);
+  text-align: center;
+  padding: 20px;
+}
+
+#top h1 {
+  animation: aparecer 1s;
+}
+.descripcion-cabecera {
+  margin: 10px auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  background-color: #e5c2c8;
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(107, 66, 38, 0.2);
+}
+
+.logo img {
+  width: 75px;
+}
+.navLinks {
+  text-align: center;
+}
+.navLinks p {
+  margin: 5px;
+}
+
+.enlaces-navegacion {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.enlaces-navegacion a {
+  text-decoration: none;
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+
+.enlaces-navegacion a:hover {
+  background-color: var(--crema);
+}
+.enlaces-navegacion .pagina-actual {
+  text-decoration: underline;
+}
+
+/* 3. CONTENIDO, TARJETAS Y ANIMACIONES */
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+main section {
+  margin-bottom: 25px;
+}
+
+.bloque,
+.tarjeta {
+  background-color: #fffdf9;
+  padding: 20px;
+  border: 1px solid #ddc3b6;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(107, 66, 38, 0.15);
+}
+
+.tarjeta {
+  animation: mostrar 1s;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mostrar {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Etiqueta colocada encima de una receta */
+.recIndex,
+.ficha-receta {
+  position: relative;
+}
+
+.etiqueta-novedad {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--rosa);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+/* 4. FOOTER - TODAS LAS PÁGINAS */
+footer {
+  background-color: var(--rosaclaro);
+  border-top: 2px solid var(--marron);
+  padding: 20px;
+}
+
+#pie-superior {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.caja-pie,
+#derechos {
+  background-color: #e5c2c8;
+  border: 2px dotted var(--marron);
+  border-radius: 10px;
+  text-align: center;
+  padding: 12px;
+}
+
+#derechos {
+  margin-top: 15px;
+}
+
+/* 5. INICIO - index.html */
+#explicacion-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: center;
+}
+
+#explicacion-index img,
+#venFoto img {
+  border-radius: 12px;
+}
+
+#postres-index,
+#ventajas {
+  background-color: #edeeec;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+#postres-index {
+  text-align: center;
+}
+#miniaturas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.miniatura {
+  text-align: center;
+}
+.miniatura img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+#recIndex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.recIndex {
+  text-align: center;
+}
+.recIndex img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+#venListaFoto {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+#venLista,
+#venFoto {
+  width: 50%;
+}
+
+/* 6. RECETAS - recetas.html */
+#catalogo-recetas {
+  padding: 20px;
+}
+.titulo-recetas {
+  background-color: #edeeec;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.seccion-receta {
+  max-width: 930px;
+  margin: 20px auto;
+}
+
+.ficha-receta {
+  padding: 25px;
+}
+.ficha-receta > img {
+  display: block;
+  width: 300px;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+/* 7. CONTACTO - contacto.html */
+#introduccion-contacto {
+  text-align: center;
+}
+#seccion-formulario {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.formulario-contacto {
+  padding: 10px;
+}
+.campo-formulario {
+  margin-bottom: 15px;
+}
+.campo-formulario label {
+  display: block;
+}
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+  max-width: 100%;
+  padding: 8px;
+  border: 1px solid var(--marron);
+  border-radius: 6px;
+}
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+  width: 100%;
+}
+
+.formulario-contacto fieldset {
+  margin-bottom: 15px;
+  border: 2px dashed var(--rosa);
+  border-radius: 8px;
+}
+
+.botones-formulario button {
+  background-color: var(--rosa);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botones-formulario button:hover {
+  background-color: var(--rojo);
+}
+
+#datos-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#datos-contacto img {
+  border-radius: 10px;
+}
+
+/* 8. INFORMACIÓN - info.html */
+#introduccion-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#introduccion-info > div:first-child {
+  width: 100%;
+}
+.tarjeta-miniatura {
+  background-color: #edeeec;
+  text-align: center;
+  width: 200px;
+}
+
+.tarjeta-miniatura img {
+  width: 180px;
+}
+
+.contenedor-tabla {
+  overflow-x: auto;
+}
+.tabla-equivalencias {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.tabla-equivalencias th,
+.tabla-equivalencias td {
+  border: 1px solid var(--marron);
+  padding: 10px;
+}
+
+.tabla-equivalencias th {
+  background-color: #e5c2c8;
+}
+.tabla-equivalencias tr:nth-child(even) {
+  background-color: #fff1ec;
+}
+
+.consejo {
+  margin-bottom: 15px;
+}
+#consejos-info img {
+  display: block;
+  width: 300px;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+#video-info iframe {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
+#audio-info audio {
+  max-width: 100%;
+}
+
+/* 9. RESPONSIVE - TABLETS Y MÓVILES */
+@media (max-width: 800px) {
+  #explicacion-index,
+  #datos-contacto {
+    grid-template-columns: 1fr;
+  }
+
+  #venListaFoto {
+    flex-direction: column;
+  }
+  #venLista,
+  #venFoto {
+    width: 100%;
+  }
+  #pie-superior {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  #top {
+    padding: 10px;
+  }
+  nav {
+    gap: 5px;
+    padding: 8px;
+  }
+  .logo img {
+    width: 35px;
+  }
+  .enlaces-navegacion {
+    gap: 5px;
+  }
+  .enlaces-navegacion a {
+    font-size: 16px;
+  }
+  main {
+    padding: 10px;
+  }
+  .bloque,
+  .tarjeta {
+    padding: 12px;
+  }
+  #recIndex,
+  #pie-superior {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Accesibilidad: menos animaciones cuando se solicita */
+@media (prefers-reduced-motion: reduce) {
+  #top h1,
+  .tarjeta {
+    animation: none;
+  }
+  .enlaces-navegacion a,
+  .botones-formulario button {
+    transition: none;
+  }
+}
